@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools{
         nodejs 'node'
-        docekrTool 'docker'
+        dockerTool 'docker'
     }
     triggers{
         githubPush()
