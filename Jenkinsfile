@@ -9,7 +9,9 @@ pipeline {
     }
 
     environment{
-        DOCKERHUB_CREDENTIALS=credentials('my_docker')
+        // DOCKERHUB_CREDENTIALS=credentials('my_docker')
+      DOCKERHUB_CREDENTIALS_USR = credentials('my_docker_usr')
+      DOCKERHUB_CREDENTIALS_PSW = credentials('my_docker_psw')
         IMAGE_NAME='seeshellol/samplespringboot'
     }
     
