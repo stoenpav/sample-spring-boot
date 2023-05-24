@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Clone Repo'){
             steps{
-               git branch: 'master', url: 'https://github.com/seeshellol/sample-spring-boot.git'
+               git branch: 'main', url: 'https://github.com/seeshellol/sample-spring-boot.git'
             }
             }
         
